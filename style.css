@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: #1e1e1e;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* App Container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #252526;
+}
+
+/* Header Styling */
+.main-header {
+    background: #2d2d2d;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    color: #007acc;
+    font-size: 24px;
+}
+
+.logo h1 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    color: #cccccc;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.btn-icon:hover {
+    background: #3a3a3a;
+    color: #fff;
+}
+
+/* Editor Area */
+.editor-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Tabs */
+.tab-container {
+    display: flex;
+    background: #252526;
+    border-bottom: 1px solid #3c3c3c;
+    padding: 0 10px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: #969696;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 13px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.tab-btn:hover {
+    color: #fff;
+    background: #2d2d2d;
+}
+
+.tab-btn.active {
+    color: #fff;
+    border-bottom-color: #007acc;
+}
+
+/* Editor Panels */
+.editor-panel {
+    display: none;
+    flex: 1;
+    overflow: hidden;
+}
+
+.editor-panel.active {
+    display: block;
+}
+
+/* Textareas */
+textarea {
+    width: 100%;
+    height: 100%;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    border: none;
+    padding: 15px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: none;
+    outline: none;
+}
+
+textarea:focus {
+    outline: 1px solid #007acc;
+}
+
+/* Preview Frame */
+#previewPanel {
+    background: white;
+}
+
+#previewFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: white;
+}
+
+/* Status Bar */
+.status-bar {
+    background: #007acc;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.status-left span, .status-right span {
+    margin-right: 15px;
+}
+
+.btn-small {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.btn-small:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .logo h1 {
+        display: none;
+    }
+    
+    .tab-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .status-left span:first-child {
+        display: none;
+    }
+}
