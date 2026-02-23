@@ -9,7 +9,7 @@ Android browser-based HTML/CSS/JS Editor with full graphical interface. Create, 
 ### ✅ **Completed Features**
 *तपाईंले काम गर्दा जाँदा यहाँ check गर्दै जानुहोस्*
 
-- [ ] Phase 1: Foundation Setup
+- [x] Phase 1: Foundation Setup
 - [ ] Phase 2: Core Editor Features
 - [ ] Phase 3: Visual Interface Elements
 - [ ] Phase 4: Advanced Features
