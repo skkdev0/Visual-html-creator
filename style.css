@@ -176,6 +176,25 @@ textarea:focus {
     background: rgba(255,255,255,0.3);
 }
 
+
+/* CodeMirror Customization */
+.CodeMirror {
+    height: 100% !important;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+}
+
+.editor-panel {
+    position: relative;
+    overflow: hidden;
+}
+
+.CodeMirror-scroll {
+    min-height: 100%;
+}
+
+
+
 /* Responsive for Mobile */
 @media (max-width: 768px) {
     .logo h1 {
