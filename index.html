@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Visual HTML Creator</title>
+    
+    <!-- CSS लिङ्क -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Manifest for Android -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Font Awesome for icons (सजिलोको लागि) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- मुख्य एप कन्टेनर -->
+    <div class="app-container">
+        
+        <!-- Header Section -->
+        <header class="main-header">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>Visual HTML Creator</h1>
+            </div>
+            
+            <!-- मुख्य नेभिगेसन बटनहरू -->
+            <div class="header-actions">
+                <button id="newBtn" class="btn-icon" title="नयाँ फाइल">
+                    <i class="fas fa-file"></i>
+                </button>
+                <button id="saveBtn" class="btn-icon" title="सेभ गर्नुहोस्">
+                    <i class="fas fa-save"></i>
+                </button>
+                <button id="previewBtn" class="btn-icon" title="प्रिभ्यू हेर्नुहोस्">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <button id="menuToggle" class="btn-icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- मुख्य एडिटर क्षेत्र -->
+        <main class="editor-area">
+            
+            <!-- ट्याब नेभिगेसन (HTML, CSS, JS) -->
+            <div class="tab-container">
+                <button class="tab-btn active" data-tab="html">HTML</button>
+                <button class="tab-btn" data-tab="css">CSS</button>
+                <button class="tab-btn" data-tab="js">JavaScript</button>
+                <button class="tab-btn" data-tab="preview">Preview</button>
+            </div>
+
+            <!-- HTML एडिटर -->
+            <div id="htmlEditor" class="editor-panel active">
+                <textarea id="htmlInput" placeholder="<!-- यहाँ HTML लेख्नुहोस् -->" spellcheck="false"><!DOCTYPE html>
+<html>
+<head>
+    <title>मेरो पेज</title>
+</head>
+<body>
+    <h1>नमस्ते संसार!</h1>
+    <p>यो मेरो पहिलो HTML हो।</p>
+</body>
+</html></textarea>
+            </div>
+
+            <!-- CSS एडिटर -->
+            <div id="cssEditor" class="editor-panel">
+                <textarea id="cssInput" placeholder="/* यहाँ CSS लेख्नुहोस् */" spellcheck="false">body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+h1 {
+    color: #333;
+}</textarea>
+            </div>
+
+            <!-- JS एडिटर -->
+            <div id="jsEditor" class="editor-panel">
+                <textarea id="jsInput" placeholder="// यहाँ JavaScript लेख्नुहोस्" spellcheck="false">console.log('Hello World!');</textarea>
+            </div>
+
+            <!-- प्रिभ्यू प्यानल -->
+            <div id="previewPanel" class="editor-panel">
+                <iframe id="previewFrame" title="Preview"></iframe>
+            </div>
+        </main>
+
+        <!-- स्टेटस बार र टुल्स -->
+        <footer class="status-bar">
+            <div class="status-left">
+                <span id="lineCol">Ln 1, Col 1</span>
+                <span id="fileStatus">Ready</span>
+            </div>
+            <div class="status-right">
+                <span id="wordCount">0 words</span>
+                <button id="runBtn" class="btn-small">
+                    <i class="fas fa-play"></i> Run
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript फाइल -->
+    <script src="script.js"></script>
+</body>
+</html>
