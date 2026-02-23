@@ -8,10 +8,12 @@
 - [ ] Add meta tags for mobile
 - [ ] Test basic layout
 
----
 
-## 🏗️ **PHASE 2: Core Editor Features**
-*Status: [ ] Pending*
+## 🏗️ **PHASE 2: Core Editor Features
+- [x] Tab switching functionality
+- [x] Live preview (with delay)
+- [ ] Syntax highlighting
+- [ ] Auto-completion
 
 ### 📝 Editor Components
 - [ ] Split Screen Layout (Editor + Preview)
