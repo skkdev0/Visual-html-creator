@@ -15,6 +15,28 @@
 - [ ] Syntax highlighting
 - [ ] Auto-completion
 
+
+## 📋 **Phase 2: Core Editor Features** (In Progress)
+
+### ✅ Completed:
+- [x] CodeMirror integration
+- [x] Syntax highlighting (HTML/CSS/JS)
+- [x] Line numbers
+- [x] Auto bracket closing
+- [x] Auto tag closing
+
+### 🔄 In Progress:
+- [ ] Undo/Redo stack
+- [ ] Search and replace
+- [ ] Multiple cursors
+
+### ⏳ Pending:
+- [ ] Auto indentation
+- [ ] Code folding
+- [ ] Emmet support
+
+
+
 ### 📝 Editor Components
 - [ ] Split Screen Layout (Editor + Preview)
 - [ ] 3 Tabs System (HTML, CSS, JavaScript)
