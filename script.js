@@ -124,3 +124,19 @@ document.addEventListener('DOMContentLoaded', () => {
     setupEventListeners();
     updatePreview();
 });
+
+
+// Update word count for CodeMirror
+function updateWordCount() {
+    let text = '';
+    if (document.querySelector('.tab-btn.active').dataset.tab === 'html') {
+        text = htmlEditor.getValue();
+    } else if (document.querySelector('.tab-btn.active').dataset.tab === 'css') {
+        text = cssEditor.getValue();
+    } else if (document.querySelector('.tab-btn.active').dataset.tab === 'js') {
+        text = jsEditor.getValue();
+    }
+    const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+    wordCountSpan.textContent = `${words} words`;
+}
+                                
